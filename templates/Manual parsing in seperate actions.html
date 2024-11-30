@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-11</title>
+    <style>
+
+header{
+    height: 40px;
+    color: gray;
+    font-size: 18px;
+    font-family: Arial;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+.toplayout{
+    background-color: #222222;
+    left: 0px;
+    right: 0px;
+}
+.underscore{
+    border-bottom: 1px solid gray;
+    margin-left:100px;
+    width:calc(100% - 150px);
+    margin-bottom:1vh;
+}
+.center{
+    margin-left: 100px;
+}
+footer{
+    margin-left: 100px;
+    position: relative;
+    width:100%;
+    font-size: 2vh;
+}
+a{
+    text-decoration: none;
+}
+span{
+    font-size: 25px;
+}
+body{
+    font-family: Arial;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="toplayout"> 
+        <header>
+            <span> Backend2 </span> Home
+        </header>
+    </div> 
+
+    <div class="center">
+        <h2 class="demonstration">ManualWithSeparateHandelers</h2>
+    
+        <input> </input>
+
+        <select>
+            <option value="+">+</option>
+            <option value="*">*</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+        </select>
+
+        <input> </input>
+
+        <button>Submit</button>
+    
+    </div>
+<div class="underscore"> </div>
+    <footer><p>© 2024 - Backend2</p></footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+</body>
