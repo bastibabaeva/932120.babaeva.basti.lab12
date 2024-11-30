@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lab-11</title>
+    <title>Task 12</title>
     <style>
 
 header{
@@ -43,23 +43,38 @@ span{
 body{
     font-family: Arial;
 }
-
+.sign{
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.submit{
+    height: 30px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+.demonstration{
+    margin-left: 100px;
+}
+.home{
+    color: gray;
+}
     </style>
 </head>
 
 <body>
    
+    <div class="page">
     <div class="toplayout"> 
         <header>
-            <span> Backend2 </span> Home
+            <span> Backend2 </span> <a href="/" class="home">Home</a>
         </header>
     </div> 
 
         <div class="center">
-            <h2 class="demonstration">From parameters parsing demo</h2>
+            <h2 class="demonstration-i">From parameters parsing demo</h2>
             <ul>
                 <li><a href="Manual parsing in single action.html">Manual parsing in single action</a></li>
-                <li><a href="Manual parsing in seperate actions.html">Manual parsing in seperate actions</a></li>
+                <li><a href="Manual parsing in separate actions.html">Manual parsing in seperate actions</a></li>
                 <li><a href="Model binding (parameters).html">Model binding (parameters)</a></li>
                 <li><a href="Model binding (separate model).html">Model binding (separate model)</a></li>
             </ul>
@@ -68,7 +83,7 @@ body{
         <div class="underscore"> </div>
 
         <footer><p>© 2024 - Backend2</p></footer>
-  
+    
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

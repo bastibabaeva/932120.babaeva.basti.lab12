@@ -48,40 +48,50 @@ input{
     height: 30px;
     border: 1px solid gray;
     border-radius: 2px;
-    
+    display: block;
 }
-
+.sign{
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.submit{
+    height: 30px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+.demonstration{
+    margin-left: 100px;
+}
+.home{
+    color: gray;
+}
     </style>
 </head>
 
 <body>
     <div class="toplayout"> 
         <header>
-            <span> Backend2 </span> Home
+            <span> Backend2 </span> <a href="/" class="home">Home</a>
         </header>
     </div> 
-
-    <div class="center">
-        <h2 class="demonstration">ManualBindingInParameters</h2>
+        
+        <h2 class="demonstration">ModelBindingInParametres</h2>
+        <div class="center">
+            <input type="number" class="first"> </input>
+            <select name="sign" class="sign">
+                <option value="+">+</option>
+                <option value="*">*</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" class="second"> </input>
+            <button class="submit">Submit</button>
+        </div>
     
-        <input> </input>
+    <div class="underscore"> </div>
 
-        <select>
-            <option value="+">+</option>
-            <option value="*">*</option>
-            <option value="-">-</option>
-            <option value="/">/</option>
-        </select>
-
-        <input> </input>
-
-        <button>Submit</button>
-    
-    </div>
-<div class="underscore"> </div>
     <footer><p>© 2024 - Backend2</p></footer>
-
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-</body>
