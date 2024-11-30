@@ -5,8 +5,8 @@ function getResult(first, second, sign){
 
     result.innerHTML=first + sign + second + '=';
     result.innerHTML+=eval(first + sign + second);
-    document.querySelector('.demostration').innerHTML = '';
-    document.querySelector('.demostration').append(result);
+    document.querySelector('.demonstration').innerHTML = '';
+    document.querySelector('.demonstration').append(result);
 }
 
 document.querySelector('.submit').onclick=function(){
